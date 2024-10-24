@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="main w-full h-full">
+    <nav class="fixed w-full top-0 left-0 w-full py-3 px-10 flex justify-between items-center bg-transparent"
+      style="font-family: 'callofduty'">
+      <div class="flex items-center">
+        <img
+          class="w-[200px] filter saturate-150 contrast-125 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] hover:scale-110 transition-transform duration-300"
+          src="./CP.png" alt="CyberPunk" srcset="">
+      </div>
+
+      <div class="flex items-center space-x-6">
+        <a href="#" class="text-white hover:text-yellow-500 transition-colors duration-300 hover:glow">Home</a>
+        <div class="relative group">
+          <button class="text-white hover:text-yellow-500 transition-colors duration-300 flex items-center hover:glow">
+            Games
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div
+            class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-black bg-opacity-80 ring-1 ring-black ring-opacity-5 invisible group-hover:visible transition-all duration-300 opacity-0 group-hover:opacity-100">
+            <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+              <a href="https://www.cyberpunk.net"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">Cyberpunk 2077</a>
+              <a href="https://www.rockstargames.com/V"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">GTA V</a>
+              <a href="https://www.thewitcher.com/en/witcher3"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">The Witcher 3</a>
+              <a href="https://www.minecraft.net"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">Minecraft</a>
+              <a href="https://www.ea.com/games/apex-legends"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">Apex Legends</a>
+              <a href="https://www.fortnite.com"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">Fortnite</a>
+              <a href="https://www.callofduty.com"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">Call of Duty</a>
+              <a href="https://www.pubg.com"
+                class="block px-4 py-2 text-sm text-white hover:bg-gray-800 hover:text-yellow-500 transition-colors duration-300 hover:glow"
+                role="menuitem">PUBG</a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="text-white hover:text-yellow-500 transition-colors duration-300 hover:glow">News</a>
+        <a href="#" class="text-white hover:text-yellow-500 transition-colors duration-300 hover:glow">Community</a>
+        <a href="#" class="text-white hover:text-yellow-500 transition-colors duration-300 hover:glow">Support</a>
+
+        <a href="#"
+          class="bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-colors duration-300 hover:shadow-[0_0_10px_rgba(255,255,0,0.8)]">Sign
+          In</a>
+      </div>
+    </nav>
+
+    <div class="w-full h-screen overflow-hidden ">
+      <img
+        class="absolute w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-screen filter saturate-150 contrast-125 drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+        src="./CP.png" alt="CyberPunk" srcset="">
+      <div class="w-full h-full absolute top-0 left-0 bg-blue-500 opacity-50 blur-3xl -z-10"></div>
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="w-full h-screen bg-zinc-900">
+      <div class="w-full h-52 absolute rounded-full bg-blue-500 blur-3xl -z-10"></div>
+    </div>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
