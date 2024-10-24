@@ -32,4 +32,8 @@ This project is a **3D model viewer** built using **Three.js**, showcasing the c
 
 
 
+https://github.com/user-attachments/assets/e115801c-77aa-46b3-a905-08e0ec610d18
+
+
+
 This project serves as a foundation for building **interactive 3D model viewers** with customizable post-processing effects and responsive user interaction.
